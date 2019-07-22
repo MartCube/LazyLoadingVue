@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'Avenir-bold';
+	src: url('fonts/Avenir-bold.woff2') format('woff2');
+		
+}
+
+@font-face {
+	font-family: 'Avenir-demi';
+	src: url('fonts/Avenir-demi.woff2') format('woff2');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+$bg1: hsla(0, 0%, 100%, 1);
+$bg2: hsla(223, 13%, 87%, 1);
+$text: #343a40;
+
+body {
+	font-family: 'Avenir-bold';
+	background-image: linear-gradient(140deg, $bg1, $bg2);
+	color: $text;
+	
+	p, span {
+		font-family: 'Avenir-demi';
+	}
+
+	h1,h2,h3{
+		margin: 20px 0;
+	}
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+	height: 100vh;
+}
