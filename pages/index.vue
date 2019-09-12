@@ -1,13 +1,5 @@
 <template>
 	<div class="container">
-		<div class="intro">
-			<h2>Lazy loading with Vue.js</h2>
-			<h1>Vue Custom Directivs</h1>
-			<h3>
-				<n-link exact to="/lazysizes">lazysizes package</n-link>
-			</h3>
-		</div>
-
 		<ImageItem :source="images[0]" :placeholder="placeholder[0]" />
 		<ImageItem :source="images[1]" :placeholder="placeholder[1]" />
 		<ImageItem :source="images[2]" :placeholder="placeholder[2]" />

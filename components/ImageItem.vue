@@ -25,17 +25,22 @@ export default {
 .image_wrapper {
 	margin: 10%;
 	//position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 
 	.placeholder {
 		position: relative;
 		width: 80vw;
+		-webkit-filter: blur(10px);
 		filter: blur(10px);
 		transition: opacity 0.5s linear;
 	}
 
 	.image {
 		position: absolute;
-		width: 80%;
+		width: 80vw;
 
 		opacity: 0;
 		transition: opacity 1s linear;
