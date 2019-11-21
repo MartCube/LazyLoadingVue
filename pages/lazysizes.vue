@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import ImageItem from '~/components/ImageItem2.vue'
+import ImageItem from '~/components/ImageItem.vue'
 
 export default {
 	components: {
