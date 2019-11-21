@@ -1,18 +1,18 @@
 <template>
 	<div class="container">
-		<ImageItem :source="images[0]" :placeholder="placeholder[0]" />
-		<ImageItem :source="images[1]" :placeholder="placeholder[1]" />
-		<ImageItem :source="images[2]" :placeholder="placeholder[2]" />
-		<ImageItem :source="images[3]" :placeholder="placeholder[3]" />
+		<ImageLazysize :source="images[0]" :placeholder="placeholder[0]" />
+		<ImageLazysize :source="images[1]" :placeholder="placeholder[1]" />
+		<ImageLazysize :source="images[2]" :placeholder="placeholder[2]" />
+		<ImageLazysize :source="images[3]" :placeholder="placeholder[3]" />
 	</div>
 </template>
 
 <script>
-import ImageItem from '~/components/ImageItem.vue'
+import ImageItem from '~/components/ImageLazysize.vue'
 
 export default {
 	components: {
-		ImageItem,
+		ImageLazysize,
 	},
 	data() {
 		return {
