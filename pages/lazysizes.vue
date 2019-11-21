@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import ImageItem from '~/components/ImageLazysize.vue'
+import ImageLazysize from '~/components/ImageLazysize.vue'
 
 export default {
 	components: {
