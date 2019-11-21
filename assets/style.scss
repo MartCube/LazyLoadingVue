@@ -1,10 +1,4 @@
 @font-face {
-	font-family: 'Avenir-bold';
-	src: url('fonts/Avenir-bold.woff2') format('woff2');
-		
-}
-
-@font-face {
 	font-family: 'Avenir-demi';
 	src: url('fonts/Avenir-demi.woff2') format('woff2');
 }
@@ -20,7 +14,7 @@ $bg2: hsla(223, 13%, 87%, 1);
 $text: #343a40;
 
 body {
-	font-family: 'Avenir-bold';
+	font-family: 'Avenir-demi';
 	background-image: linear-gradient(140deg, $bg1, $bg2);
 	color: $text;
 	
@@ -36,6 +30,7 @@ body {
 .container{
 	display: flex;
 	flex-direction: column;
+	min-height: 100vh;
 	
 	justify-content: center;
 	align-items: center;

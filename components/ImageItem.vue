@@ -24,6 +24,7 @@ export default {
 <style lang="scss" scoped>
 .image_wrapper {
 	margin: 10%;
+	min-height: 100vh;
 
 	display: flex;
 	justify-content: center;

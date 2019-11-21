@@ -56,7 +56,7 @@ export default {
 			text-decoration: none;
 			font-size: 1.2em;
 			text-transform: uppercase;
-			color: #171717;
+			color: #34495e;
 			outline: none;
 
 			&::after {
@@ -65,7 +65,7 @@ export default {
 				width: 100%;
 				height: 4px;
 				border-radius: 10px;
-				background: #fc4a1a;
+				background: #41b883;
 
 				opacity: 0;
 				transition: all 0.3s;
@@ -90,7 +90,7 @@ export default {
 			align-items: center;
 
 			padding: 10% 0;
-			background-color: rgba(252, 74, 26, 0.85);
+			background-color: rgba(52, 73, 94, 0.9);
 
 			position: fixed;
 			top: 0;
@@ -102,7 +102,7 @@ export default {
 				animation: fadeInRight 0.5s ease forwards;
 				color: white;
 				&::after {
-					background: white;
+					background: #41b883;
 				}
 			}
 		}
@@ -145,7 +145,7 @@ export default {
 		}
 
 		span {
-			background: #171717;
+			background: #34495e;
 			border-radius: 10px;
 			height: 5px;
 			width: 100%;
