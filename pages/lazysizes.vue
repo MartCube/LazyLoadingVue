@@ -1,18 +1,18 @@
 <template>
 	<div class="container">
-		<ImageItem2 :source="images[0]" />
-		<ImageItem2 :source="images[1]" />
-		<ImageItem2 :source="images[2]" />
-		<ImageItem2 :source="images[3]" />
+		<ImageItem :source="images[0]" :placeholder="placeholder[0]" />
+		<ImageItem :source="images[1]" :placeholder="placeholder[1]" />
+		<ImageItem :source="images[2]" :placeholder="placeholder[2]" />
+		<ImageItem :source="images[3]" :placeholder="placeholder[3]" />
 	</div>
 </template>
 
 <script>
-import ImageItem2 from '~/components/ImageItem2.vue'
+import ImageItem from '~/components/ImageItem2.vue'
 
 export default {
 	components: {
-		ImageItem2,
+		ImageItem,
 	},
 	data() {
 		return {

@@ -1,6 +1,6 @@
 <template>
-	<figure v-lazyload class="image_wrapper">
-		<img class="image" :data-url="source" alt="image" />
+	<figure class="image_wrapper">
+		<img class="image lazyload blur-up" :data-srcset="source" :src="placeholder" />
 	</figure>
 </template>
 
@@ -12,6 +12,10 @@ export default {
 			type: String,
 			required: true,
 		},
+		placeholder: {
+			type: String,
+			required: true,
+		},
 	},
 }
 </script>
@@ -19,17 +23,24 @@ export default {
 <style lang="scss" scoped>
 .image_wrapper {
 	margin: 10%;
+	min-height: 100vh;
 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 	.image {
-		opacity: 0;
-		width: 100%;
-		transition: opacity 1s linear;
+		width: 80vw;
 	}
 
-	&.loaded {
-		.image {
-			opacity: 1;
-		}
+	.blur-up {
+		-webkit-filter: blur(5px);
+		filter: blur(5px);
+		transition: filter 3000ms 500ms, -webkit-filter 3000ms 500ms;
+	}
+	.blur-up.lazyloaded {
+		-webkit-filter: blur(0);
+		filter: blur(0);
 	}
 }
 </style>
